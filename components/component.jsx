@@ -92,11 +92,11 @@ export function Component() {
                   Get in Touch
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Let's Discuss Your Needs
+                  Let&apos;s Discuss Your Needs
                 </h2>
                 <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                   Our team is here to help you find the right solutions for your
-                  business. Fill out the form below and we'll be in touch.
+                  business. Fill out the form below and we&apos;ll be in touch.
                 </p>
               </div>
             </div>
