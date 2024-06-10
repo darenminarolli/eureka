@@ -1,27 +1,21 @@
-import Link from "next/link"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Button } from "@/components/ui/button"
-import { SparklesCore } from "./ui/sparkles"
-import { WavyBackground } from "./ui/wavy-bg"
-import Navbar from "./Navbar"
-import About from "./About"
-import Work from "./Work"
-import Home from "./Home"
+import Link from "next/link";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/ui/button";
+import Navbar from "./Navbar";
+import About from "./About";
+import Work from "./Work";
+import Home from "./Home";
 
 export function Component() {
   return (
-    (
     <div className="flex flex-col min-h-sreen">
-      <Navbar/>
+      <Navbar />
       <main className="flex-1">
+        <Home />
+        <About />
 
-
-
-  <Home/>
-<About/>
-
-<Work/>
+        <Work />
         {/* <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <div
@@ -92,18 +86,17 @@ export function Component() {
         </section> */}
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
           <div className="container px-4 md:px-6">
-            <div
-              className="flex flex-col items-center justify-center space-y-4 text-center">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div
-                  className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
+                <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
                   Get in Touch
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Let's Discuss Your Needs</h2>
-                <p
-                  className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Our team is here to help you find the right solutions for your business. Fill out the form below and
-                  we'll be in touch.
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Let's Discuss Your Needs
+                </h2>
+                <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                  Our team is here to help you find the right solutions for your
+                  business. Fill out the form below and we'll be in touch.
                 </p>
               </div>
             </div>
@@ -121,8 +114,7 @@ export function Component() {
         </section>
       </main>
       <footer className="bg-gray-100 p-6 md:py-12 w-full dark:bg-gray-800">
-        <div
-          className="container max-w-7xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-sm">
+        <div className="container max-w-7xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-sm">
           <div className="grid gap-1">
             <h3 className="font-semibold">Company</h3>
             <Link href="#">About Us</Link>
@@ -156,6 +148,6 @@ export function Component() {
           </div>
         </div>
       </footer>
-    </div>)
+    </div>
   );
 }
