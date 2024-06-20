@@ -1,13 +1,12 @@
 import Link from "next/link";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
 import Navbar from "./Navbar";
 import About from "./About";
 import Work from "./Work";
 import Home from "./Home";
+import Form from "./Form";
 
 export function Component() {
+
   return (
     <div className="flex flex-col min-h-sreen">
       <Navbar />
@@ -16,6 +15,7 @@ export function Component() {
         <About />
 
         <Work />
+
         {/* <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <div
@@ -101,14 +101,7 @@ export function Component() {
               </div>
             </div>
             <div className="mx-auto w-full max-w-sm space-y-2">
-              <form className="flex flex-col space-y-4">
-                <Input className="max-w-lg" placeholder="Name" type="text" />
-                <Input className="max-w-lg" placeholder="Email" type="email" />
-                <Textarea className="max-w-lg" placeholder="Message" />
-                <Button className="w-full" type="submit">
-                  Submit
-                </Button>
-              </form>
+<Form/>
             </div>
           </div>
         </section>
